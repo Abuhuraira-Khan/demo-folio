@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #181717;
+}
+
+.first-sec{
+    background:#000 ;
+    display: flex;
+    color: white;
+}
+
+
+
+
+/*-----start header -------*/
+/*-----start header -------*/
+.logo {
+    margin-left: 50px;
+    display: inline-block;
+    color: #ffffff;
+}
+
+nav .nav-menu{
+    height: 15px;
+    padding: 20px;
+    width: 97%;
+    border-bottom: 1px solid gray;
+    background-color: #000;
+    position: fixed;
+    top:-10px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+
+.nav-menu a{
+    margin-left: 20px;
+    color: #dbdbd9;
+    padding: 5px;
+    letter-spacing: 3px;
+    text-decoration:none;
+    font-weight: bold;
+    position: relative;
+    transition: .3s ;    
+}
+
+.nav-menu a::after{
+    content: '';
+    width:0;
+    height: 2px;
+    background-color:transparent;
+    background: cyan;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    transition: .3s;
+}
+
+.nav-menu a:hover:after{
+    left:  0px;
+    width: 100%; 
+}
+
+
+.nav-menu .home{
+    margin-left: 250px;
+}
+
+.nav-menu a:hover{
+    color: cyan;
+}
+
+/*----////---header section > search area-----/////------*/
+.search-area{
+    position: relative;
+    left: 77%;
+    top: -30px;
+    height: 40px;
+}
+
+.search-area #ss{
+    display: inline-block;
+}
+
+#ss button{
+    background: #fff;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: none;
+    padding: 5px 10px 5px 0px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#ss input{
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 10px;
+    transition: .5s;
+    width: 0px;
+    background: transparent;
+    border: none !important;
+}
+#ss input:focus{
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: none;
+    outline: #fff;
+}
+.search-area #search-btn{
+display: inline-block;
+padding: 5px;
+font-size: 18px;
+border-radius: 50%;
+border: none;
+background: transparent;
+cursor: pointer;
+}
+
+.search-area #search-btn i:hover{
+    color: cyan !important;
+}
+
+
+
+
+
+/*-----first section > image section-------*/
+/*-----first section > image section-------*/
+.my-img-cen{
+    height: 600px;
+    width: 40%;
+    padding: 0px 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 0px !important;
+    margin-top: 30px !important;
+    background-color: #020202;
+}
+
+.my-img{
+    width: 700px;
+    height: 700px;
+    filter:grayscale(100%);
+}
+.my-img:hover{
+    animation: my-image-anime 1.6s ease infinite;
+}
+
+@keyframes my-image-anime{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+
+/*-----///------skill section------///------*/
+/*-------///-----skill section------///------*/
+.skill-d{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: none;
+    filter: grayscale(100%);
+}
+
+
+
+/*---//---html skill---//-----*/
+.html-skill{
+    top: 300px;
+    left: 80px;
+}
+
+.my-img-cen:hover .html-skill{
+    animation: html-anim 1.5s;
+    display: block;
+}
+
+@keyframes html-anim{
+    0%{
+        top: 380px;
+        left: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        left: 20px;
+    }
+    100%{
+        top: 300px;
+        left:80px;
+    }
+}
+
+/*---//--css skill --//---*/
+.css-skill{
+    top: 230px;
+    left: 100px;
+}
+
+.my-img-cen:hover .css-skill{
+    animation: css-anim 1.5s;
+    display: block;
+}
+
+@keyframes css-anim{
+    0%{
+        top: 380px;
+        left: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        left: 20px;
+    }
+    100%{
+        top: 230px;
+        left: 100px;
+    }
+}
+
+
+/*---//--bootstrap skill --//---*/
+.bs-skill{
+    top: 160px;
+    left: 110px;
+}
+
+.my-img-cen:hover .bs-skill{
+    animation: bs-anim 1.5s;
+    display: block;
+}
+
+@keyframes bs-anim{
+    0%{
+        top: 380px;
+        left: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        left: 20px;
+    }
+    100%{
+        top: 160px;
+        left: 110px;
+    }
+}
+
+/*---//--javascript skill --//---*/
+.js-skill{
+    top: 90px;
+    left: 130px;
+}
+
+.my-img-cen:hover .js-skill{
+    animation: js-anim 1.5s;
+    display: block;
+}
+
+@keyframes js-anim{
+    0%{
+        top: 380px;
+        left: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        left: 20px;
+    }
+    100%{
+        top: 90px;
+        left: 130px;
+    }
+}
+
+/*---//--react skill --//---*/
+.react-skill{
+    top: 40px;
+    left: 160px;
+}
+
+.my-img-cen:hover .react-skill{
+    animation: react-anim 1.5s;
+    display: block;
+}
+
+@keyframes react-anim{
+    0%{
+        top: 380px;
+        left: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        left: 20px;
+    }
+    100%{
+        top: 40px;
+        left: 160px;
+    }
+}
+
+/*---//--wordpress skill --//---*/
+.wp-skill{
+    top: 40px;
+    right: 160px;
+}
+
+.my-img-cen:hover .wp-skill{
+    animation: wp-anim 1.5s;
+    display: block;
+}
+
+@keyframes wp-anim{
+    0%{
+        top: 380px;
+        right: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        right: 20px;
+    }
+    100%{
+        top: 40px;
+        right: 160px;
+    }
+}
+
+/*---//--php skill --//---*/
+.php-skill{
+    top:90px;
+    right: 130px;
+}
+
+.my-img-cen:hover .php-skill{
+    animation: php-anim 1.5s;
+    display: block;
+}
+
+@keyframes php-anim{
+    0%{
+        top: 380px;
+        right: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        right: 20px;
+    }
+    100%{
+        top: 90px;
+        right: 130px;
+    }
+}
+
+/*---//--sql skill --//---*/
+.sql-skill{
+    top: 160px;
+    right: 100px;
+}
+
+.my-img-cen:hover .sql-skill{
+    animation: sql-anim 1.5s;
+    display: block;
+}
+
+@keyframes sql-anim{
+    0%{
+        top: 380px;
+        right: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        right: 20px;
+    }
+    100%{
+        top: 160px;
+        right: 100px;
+    }
+}
+
+/*---//--mysql skill --//---*/
+.mysql-skill{
+    top: 230px;
+    right: 90px;
+}
+
+.my-img-cen:hover .mysql-skill{
+    animation: mysql-anim 1.5s;
+    display: block;
+}
+
+@keyframes mysql-anim{
+    0%{
+        top: 380px;
+        right: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        right: 20px;
+    }
+    100%{
+        top: 230px;
+        right: 90px;
+    }
+}
+
+/*---//--jquery skill --//---*/
+.jq-skill{
+    top: 300px;
+    right: 80px;
+}
+
+.my-img-cen:hover .jq-skill{
+    animation: jq-anim 1.5s;
+    display: block;
+}
+
+@keyframes jq-anim{
+    0%{
+        top: 380px;
+        right: 150px;
+    }
+ 
+    50%{
+        top:30px;
+        right: 20px;
+    }
+    100%{
+        top: 300px;
+        right: 80px;
+    }
+}
+
+
+
+/*------/////-----About section-----////-------*/
+/*------/////-----About section-----////-------*/
+
+/*---///---first section > left section----////----*/
+.left-about-sec{
+    width: 30%;
+    margin: 0 !important;
+    color: #fff;
+    font-size: 15px;
+    background-color: #000000;
+}
+#skill-auto{
+    color: #920707 !important;
+}
+
+.las-1st-sec{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+.las-2nd-sec{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+/*---///---first section > right section----////----*/
+.right-about-sec{
+    width: 30%;
+    margin: 0 !important;
+    font-size: 20px;
+    background-color: #000000;
+}
+.ras-1st-sec{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.ras-2nd-sec{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.ras-1st-sec h1{
+    display: inline-block;
+    font-size: 80px;
+}
+.ras-1st-sec p{
+    display: inline-block;
+    letter-spacing: 2px;
+} 
+
+
+
+
+
+
+
+
+/*------///////////------start 2nd section ---------///////////------------*/
+/*------///////////------start 2nd section ---------///////////------------*/
+
